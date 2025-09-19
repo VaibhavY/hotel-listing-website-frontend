@@ -1,0 +1,1335 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*, html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #000;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: "Jost", sans-serif;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; 
+    padding: 0;
+    font-family: "Jost", sans-serif;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    font-family: "Jost", sans-serif;
+    color: #007AFF;
+}
+a:hover{
+    color: #AB9989;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 400;
+    color: #606060;
+}
+*::-moz-selection {
+    background: #b3d4fc;
+    color: #fff;
+    text-shadow: none;
+}
+::-moz-selection {
+    color: #fff;
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+    color: #fff;
+}
+
+/* Googlefont Poppins CDN Link */
+nav {
+	width: 100%;
+	background: #181818db;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	z-index: 99;
+	display: flex;
+	align-items: center;
+}
+.header-main .navbar-expand-lg{
+    padding: 0;
+}
+nav .navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0px;
+}
+.logo img{
+    width: 170px;
+}
+.header-main.fixed-top.sticky .logo img{
+    width: 120px;
+}
+.navbar .links li .sub-menu a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+.nav-links{
+    line-height: 70px;
+    height: 100%;
+}
+.main-nav ul li .nav-link {
+	color: #fff;
+	font-size: 1.12rem;
+	text-decoration: none;
+	padding: 0 1.5rem !important;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 5px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: #fff;
+}
+.main-nav .dropdown-toggle::after {
+    border: 0;
+    background-image: url(../img/menu_drop_arrow.svg);
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 19px;
+}
+.dropdown-menu {
+	padding: 5px;
+  
+}
+.dropdown-menu li:hover .dropdown-item{
+    background-color: #E6E7F2;
+}
+.dropdown-item {
+	display: flex;
+	gap: 10px;
+	font-size: 1.15rem;
+	color: #181818;
+	padding: 7px;
+    border-radius: 4px;
+}
+.hero-slider{
+    position: relative;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.hero-slider .video-header{
+    width: 100%;
+}
+.hero-banner-content{
+    max-width: 600px;
+    padding: 1.8rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, .5);
+}
+.hero-banner-content h1{
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.hero-banner-content p{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* nav baar end */
+
+.bg-images{
+    width: 100%;
+    padding-top: 0;
+}
+.topspecing{
+    padding: 160px 0px 80px 0px;
+} 
+
+.slide-contents h2 {
+    color: #ffffff;
+    font-family: "Jost", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+.slide-contents p {
+    color: #ffffff;
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    line-height: 22px;
+}
+
+.btn {
+    padding: 8px 30px;
+    background:#007AFF;
+    color: #fff;
+    font-size: 1rem;
+    display: inline-block;
+    position: relative;
+    border:0;
+    border-radius: 0;
+    border-bottom: 0;
+}
+
+.btn:after{
+    width: 100%;
+    content: '';
+    height: 2px;
+    background-color: #007AFF;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.btn:hover {
+    background: #98BC3F;
+    color: #fff;
+}
+
+.btn:hover:after{
+    background-color: #98BC3F;
+}
+
+.bannerimages img{
+    width: 100%;
+}
+
+.banner-cotent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+.py-60{
+    padding: 60px 0;
+}
+
+/*--Common title--*/
+.common-title{
+    position: relative;
+    margin-bottom: 20px;
+}
+.common-title h5{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #AB9989;
+    font-size: 18px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.common-title h5:before{
+    content: '';
+    width: 40px;
+    height: 1px;
+    background-color: #AB9989;
+    display: flex;
+    margin-right:10px ;
+}
+h2{
+    font-size: 52px;
+    color: #181818;
+    font-weight: 300;
+}
+
+p{
+    color: #7F8194;
+    font-weight: 400;
+}
+
+.abouts2 p {
+    color: #181818;
+    font-family: "Jost", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 22px;
+}
+.imagesmale{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+.nametext{
+    color: rgb(24, 24, 24, 1);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.postionposts{
+    font-size: 0.75rem;
+    font-weight: 400; 
+    color: #424242;
+}
+
+
+.happy-club-card{
+    position: relative;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.overlay{
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    background: linear-gradient(to bottom, rgba(84, 84, 84, 0.1), rgba(24, 24, 24, 0.3), rgb(24, 24, 24, .92));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 1.5rem;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.happy-club-card img{
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.happy-club-card:hover img{
+    transform: scale(1.2);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.happy-club-card:hover .overlay{
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.overlay h3{
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+/*--Most loved restorant--*/
+
+.most-loved-section {
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+
+.game-section .owl-stage {
+    margin: 15px 0;
+    display: flex;
+    display: -webkit-flex;
+}
+.game-section .item {
+    margin: 0 0px 40px;
+    width: auto;
+    position: relative;
+    height: auto;
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    background: #343434 no-repeat center center / cover;
+    border-radius: 0px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.game-section .item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.game-section .item-desc {
+    padding: 0 24px 0px;
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    transform: translateY(calc(100% - 54px));
+    -webkit-transform: translateY(calc(100% - 54px));
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.game-section .item.active .item-desc {
+    transform: none;
+    -webkit-transform: none;
+}
+
+.owl-dots {
+	position: relative;
+	z-index: 5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+}
+.owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    background-color: rgb(24, 24, 24, .4)!important;
+}
+.owl-dots .owl-dot.active{
+    background-color: rgb(24, 24, 24, 1)!important;
+}
+
+/*---New Hotels section start here--*/
+img{
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.hotel-card:hover img, .hotel-right-card:hover img{
+    transform: scale(1.1);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.hotel-right-card{
+    position: relative;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    overflow: hidden;
+    width: 100%;
+}
+.hotel-right-card-detials{
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom, rgba(84, 84, 84, 0.1), rgba(24, 24, 24, 0.5), rgb(24, 24, 24, .92));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 1rem;
+}
+.hotel-right-card-detials h4, .hotel-right-card-detials h4 a{
+    font-size: 1.25rem;
+    color: #fff;
+}
+.hotel-right-card-detials .location-detail{
+    font-size: 12px;
+}
+.hotel-card{
+    width: 100%;
+    overflow: hidden;
+    height: 550px;
+    display: inline-block;
+    position: relative;
+}
+.hotel-info-box{
+    position: absolute;
+    left: 20px;
+    width: 94%;
+    padding: 20px;
+    background-color: rgb(24, 24, 24, .92);
+    bottom: 20px;
+}
+
+.popular-magic-section .owl-dots{
+    margin-top: 40px;
+}
+.popular-magic-section .owl-dots .owl-dot{
+    background-color: rgb(255, 255, 255, .6)!important;
+}
+
+.popular-magic-section .owl-dots .owl-dot.active{
+    background-color: rgb(255, 255, 255, 1)!important;
+}
+.bg-dark{
+    background-color: #181818!important;
+}
+
+.post-content{
+    padding: 20px 0px 0 0;
+}
+.posted-on{
+    color: #181818;
+}
+.post-content h3, .post-content h3 a{
+    font-size: 1.5rem;
+    color: #181818;
+}
+.post-thumbnail{
+    max-height: 370px;
+    overflow: hidden;
+}
+
+.blog-post-small {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	justify-content: flex-start;
+}
+.blog-post-small .post-thumbnail {
+	max-height: 190px;
+	overflow: hidden;
+    max-width: 190px;
+}
+.blog-post-small .post-content h3, .blog-post-small .post-content h3 a {
+	font-size: 1.2rem;
+	color: #181818;
+}
+
+.features-logo-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.benefit-card{
+    border-radius: 10px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    padding: 50px 30px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #98BC3F;
+    position: relative;
+    margin-bottom: 30px;
+}
+.benefit-card h4{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.know-more-btn{
+    position: absolute;
+    left: 30px;
+    bottom: 40px;
+}
+.benefit-card.orange-box{
+    background-color: #E38530;
+}
+.form-control, .form-select {
+	border-radius: 5px;
+	border-color: #BBBDCE;
+	color: #181818;
+	font-size: 1rem;
+	padding: 0.57rem 0.7rem;
+}
+.contact-us-form label{
+    font-size: 1rem;
+    color: #181818;
+    margin-bottom: 10px;
+}
+input:focus, select:focus, button:focus{
+    outline: none!important;
+    box-shadow: none!important;
+}
+.contact-us-section h2{
+    font-size: 2.2rem;
+}
+
+.video-container{
+    margin-bottom: 30px;
+}
+
+.popular-search-box {
+	background-color: #F3F3F3;
+}
+.popular-links{
+    padding: 0;
+    margin: 0;
+}
+.popular-links li{
+    display: flex;
+    margin-bottom: 10px;
+}
+.popular-links li a{
+    display: flex;
+    gap:10px;
+    font-size: 14px;
+    color: #181818;
+    align-items: center;
+    justify-content: center;
+}
+.popular-links svg{
+    stroke:#181818;
+}
+.popular-links li a:hover{
+    color: #007AFF;
+}
+
+.popular-links li a:hover svg{
+    stroke: #007AFF;
+}
+
+footer .popular-links li a, footer .popular-links li a:hover{
+    color: #fff;
+}
+footer .popular-links li a svg, footer .popular-links li a:hover svg{
+    stroke: #fff;
+}
+.contact-details-foot{
+    color: #fff;
+}
+
+.follow-us-icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+    gap: 10px;
+    padding-left: 0;
+}
+.copyright-bottom {
+    background-color: #fff;
+}
+.copyright-bottom p{
+    margin-bottom: 0;
+}
+.copyright-bottom a{
+    color: #181818;
+}
+
+/*----Inner pages css start here---*/
+
+.inner-header-img {
+	background: url(../img/bg-images.png) no-repeat 0 0;
+	width: 100%;
+	height: 90px;
+	display: flex;
+}
+.innerpage-hero{
+    width: 100%;
+}
+.innerpage-content {
+	background: url(../img/bg-images.png) no-repeat 0 0;
+	width: 100%;
+	height: 450px;
+	display: flex;
+	position: relative;
+	padding: 40px 0;
+}
+.pt-100{
+    padding-top: 120px;
+}
+.menu-icon {
+	min-width: 23px;
+}
+
+h1 {
+	font-size: 3.5rem;
+	color: #fff;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 20px;
+}
+.innerpage-hero p{
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.btn-set{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.btn-light{
+    background-color: #fff;
+    color: #181818;
+}
+
+.btn-light:after{
+    background-color: #fff;
+}
+
+.membership-form {
+	max-width: 400px;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+.membership-form h4 {
+	color: #181818;
+	font-size: 1.15rem;
+	text-align: center;
+	font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.mebership-area{
+    margin-bottom: 2rem;
+}
+.mebership-area h5{
+    color: #181818;
+    font-size: 1.2rem;
+    margin-top: 0.57rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.become_member{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.become-a-meber{
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pick-some-experience{
+    background: url(../img/pick_some_bg.png) repeat-x center center;
+    width: 100%;
+}
+
+.experience-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #fff;
+	border-radius: 6px;
+	padding: 10px;
+    gap: 10px;
+    min-height: 150px;
+}
+.experience-box img{
+    max-width: 72px;
+}
+.pick-some-imgslider .owl-item .experience-box{
+    margin-top: 25px;
+}
+.pick-some-imgslider .owl-item.active.center .experience-box{
+    height: 200px;
+    margin-top: 0;
+}
+
+
+.hotel-intabs {
+	/* background-color: #fff; */
+}
+.hotel-intabs .hotel-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+.innerpage-content.hotel-banner{
+    height: 330px;
+}
+.search-location-tabs .nav-tabs{
+    border-bottom: 0;
+}
+.hotel-form .form-select {
+	border-radius: 0;
+}
+
+.search-location-tabs .nav-tabs .nav-link{
+    border-radius: 4px 0px 0 0;
+    background-color: #E8E6E6;
+    font-size: 1rem;
+    color: #181818;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-bottom: 0px!important;
+    border-color: transparent;
+}
+.search-location-tabs .nav-tabs li:last-child .nav-link{
+    border-radius: 0px 4px 0 0;
+}
+.search-location-tabs .nav-tabs .nav-link.active{
+    background-color: #fff;
+}
+
+.search-location-tabs .nav-tabs .nav-link:focus, .search-location-tabs .nav-tabs .nav-link:hover{
+    border-color: transparent;
+}
+
+.mar-3 {
+	margin-top: -4px;
+}
+
+.thumbnail-box{
+    width: 100%;
+    height: 315px;
+    overflow: hidden;
+}
+
+.thumbnail-box img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hotel-descrition{
+    padding: 20px 0;
+}
+.hotel-descrition h4,.hotel-descrition h4 a{
+    color: #181818;
+    font-weight: 700;
+}
+.location-icon {
+	gap: 6px;
+	font-size: 14px;
+	color: #7F8194;
+}
+
+.hotel-details-banner{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    
+}
+.hotel-details-content{
+    padding: 50px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.explore-together {
+	padding: 30px;
+	background-color: #F6F6F6;
+	border-radius: 4px;
+	height: 100%;
+}
+
+.explore-together h3{
+	font-size: 2rem;
+    color: #181818;
+    margin-bottom: 30px;
+}
+
+.benefits-list{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+.benifits-icons{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007AFF;
+}
+.benefits-list p{
+    color: #181818;
+    font-size: 1.25rem;
+}
+
+
+.login-formbg {
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 30px 40px;
+	box-shadow: 0 0 20px rgb(24, 24, 24, .4);
+	max-width: 650px;
+}
+.hide-icon{
+    display: none;
+}
+
+.login-formbg h3{
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #181818;
+}
+.eye-icons {
+	position: absolute;
+	right: 14px;
+	top: 52%;
+	cursor: pointer;
+}
+
+
+.myprofile-icons {
+	background-color: #fff;
+	padding: 5px;
+	border-radius: 40px;
+}
+
+
+.membership_card {
+	padding: 24px 20px 30px 20px;
+    background: url(../img/membership_card/bronze_member.png) no-repeat 0 0;
+    background-size: 100%;
+}
+
+.membership_card.sliver_card {
+	background: url(../img/membership_card/sliver_member.png) no-repeat 0 0;
+    background-size: 100%;
+}
+
+.membership_card.platinum_card {
+    background: url(../img/membership_card/platinum_member.png) no-repeat 0 0;
+    background-size: 100%;
+}
+
+
+.card_header_top {
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+.hotel_logo {
+	width: 60px;
+	height: 60px;
+	border-radius: 100px;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card_header_top h3{
+    color: #181818;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.member_detials h2{
+    font-size: 1.52rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #181818;
+    letter-spacing: 1px;
+}
+.bronze_card .card_header_top h3,
+.bronze_card .member_detials h2,
+.bronze_card .card_experiry p,
+.bronze_card .card_experiry h4{
+    color: #fff;
+}
+
+.card_experiry p{
+    color: #181818;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.card_experiry h4{
+    color: #181818;
+    font-weight: 300;
+    font-size: 1.52rem;
+    margin-bottom: 0;
+}
+
+.member_detials {
+	padding: 10px 0 48px 0;
+}
+
+
+
+
+@media(max-width:1300px){
+    *, body{
+        font-size: 100%;
+    }
+    .hero-banner-content h1, h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .overlay h3{
+        font-size: 1.25rem;
+    }
+    .h3, h3 {
+        font-size: 1.25rem;
+    }
+    .h4, h4 {
+        font-size: 1.2rem;
+    }
+    .hotel-right-card-detials h4, .hotel-right-card-detials h4 a {
+        font-size: 1rem;
+        color: #fff;
+    }
+    .hotel-card {
+        height: 486px;
+    }
+    .happy-club-card {
+        height: 340px;
+     }
+     .videosection video{
+        width: 100%;
+     }
+     .hotel_logo {
+        width: 50px;
+        height: 50px;
+    }
+    .card_header_top h3 {
+       font-size: 1.3rem;
+    }
+    .membership_card {
+        padding: 13px 20px 20px 20px;
+    }
+    .member_detials h2 {
+        font-size: 1.3rem;
+    }
+    .card_experiry p {
+        font-size: 0.875rem;
+    }
+}
+
+@media(max-width:1200px){
+    *, body{
+        font-size: 100%;
+    }
+    .hero-banner-content h1, h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .benefit-card h4{
+        font-size: 1.5rem;
+    }
+    .benefit-card{
+        height: 300px;
+    }
+    .overlay h3{
+        font-size: 1.15rem;
+    }
+    .h3, h3 {
+        font-size: 1.15rem;
+    }
+    .h4, h4 {
+        font-size: 1rem;
+    }
+    .hotel-right-card-detials h4, .hotel-right-card-detials h4 a {
+        font-size: 1rem;
+        color: #fff;
+    }
+    .hotel-card {
+        height: 486px;
+    }
+    .happy-club-card {
+        height: 340px;
+     }
+     .videosection video{
+        width: 100%;
+     }
+     .popular-links li a{
+        font-size: 13px;
+     }
+    .card_header_top h3{
+        font-size: 1.2rem;
+    }
+    .hotel_logo {
+        width: 40px;
+        height: 40px;
+    }
+    .membership_card {
+        padding: 10px 20px 40px 20px;
+    }
+    .member_detials h2 {
+        font-size: 1.3rem;
+    }
+    .card_experiry p {
+        font-size: 0.875rem;
+    }
+    .card_experiry h4 {
+        font-size: 1.3rem;
+    }
+    .member_detials {
+        padding: 10px 0 10px 0;
+    }
+}
+
+@media(max-width:992px){
+    .main-nav ul li .nav-link {
+        font-size: 1.12rem;
+        padding: 0.51rem .5rem 0.51rem 1rem !important;
+        gap: 5px;
+        justify-content: space-between;
+    }
+    .main-nav .dropdown-toggle::after {
+        transform: rotate(-90deg);
+    }
+    .nav-link.dropdown-toggle.show:after{
+        transform: rotate(0deg);
+    }
+    .overlay{
+        opacity: 1;
+    }
+    .common-title h5{
+        font-size: 12px;
+    }
+    .post-content {
+        padding: 20px 0px 20px 0;
+    }
+    .post-content h3, .post-content h3 a, .blog-post-small .post-content h3, .blog-post-small .post-content h3 a {
+        font-size: 1rem;
+     }
+
+     .features-logo-section {
+        flex-wrap: wrap;
+    }
+    .single-col{
+        width: 30%;
+    }
+    .maplocation{
+        margin-top: 40px;
+    }
+    .maplocation iframe {
+        height: 300px !important;
+        width: 100%;
+    }
+    .py-60 {
+        padding: 40px 0;
+    }
+    .pt-100 {
+        padding-top: 100px;
+    }
+    footer .popular-links{
+        margin-bottom: 2rem;
+    }
+    .header-main .navbar-expand-lg .navbar-collapse {
+	    padding: 0 0 30px 0;    
+    }
+
+    .innerpage-hero p{
+        font-size: 16px;
+    }
+    .membership-form h4 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .membership-form {
+        padding: 23px;
+    }
+    .innerpage-content {
+        height: 420px;
+     }
+
+     .pick-some-imgslider .owl-item.active.center .experience-box{
+        height: 160px;
+     }
+     .pick-some-imgslider .owl-item.active.center .experience-box{
+        margin-top: 15px;
+     }
+
+     .experience-box{
+        min-height: 130px;
+     }
+
+     .form-control, .form-select {
+        padding: 0.45rem 0.6rem;
+    }
+
+    .membership_card {
+        padding: 10px 20px 62px 20px;
+    }
+    
+}
+
+@media(max-width:767px){
+    .game-section .item{
+        margin-bottom: 20px;
+    }
+    .hero-banner-content{
+        display: none;
+    }
+    .logo img {
+        width: 100px;
+    }
+    .header-main.fixed-top.sticky .logo img {
+        width: 100px;
+    }
+    h2 {
+        font-size: 1.52rem;
+    }
+    .contact-us-section h2 {
+        font-size: 1.5rem;
+    }
+    .game-section .item-desc {
+        margin-bottom: 10px;
+    }
+    .hotel-card {
+        height: auto;
+    }
+    .hotel-info-box {
+        position: absolute;
+        left: 10px;
+        width: 94%;
+        padding: 15px;
+        background-color: rgb(24, 24, 24, .92);
+        bottom: 10px;
+    }
+    .contact-us-form label {
+        font-size: 0.875rem;
+        color: #181818;
+        margin-bottom: 6px;
+    }
+    .copyright-bottom p {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .innerpage-hero p{
+        display: none;
+    }
+    .membership-form{
+        max-width: 100%;
+    }
+    .btn-set{
+        display: none;
+    }
+    .innerpage-hero {
+        height: 85vh;
+    }
+    
+    .mebership-area.down-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .inner-header-img {
+        height: 54px;
+    }
+    .pt-100 {
+        padding-top: 140px;
+    }
+    .innerpage-hero.hotel-listing {
+        height: 48vh;
+    }
+    .innerpage-hero.hotel-detail-page{
+        height: 90vh;
+    }
+    .innerpage-hero .hotel-details-banner{
+        overflow:visible;
+        height: auto;
+    }
+    .membership_card {
+        padding: 20px 20px 62px 20px;
+    }
+}
+
+@media(max-width:600px){
+    .blog-post-small{
+        flex-direction: column;
+    }
+    .blog-post-small .post-thumbnail {
+        max-height: inherit;
+        overflow: hidden;
+        max-width: 100%;
+    }
+    .post-thumbnail {
+        max-height: inherit;
+        overflow: hidden;
+    }
+    .common-title {
+        margin-bottom: 0;
+    }
+    .common-title h5::before {
+        width: 15px;
+    }
+    .single-col {
+        width: 43%;
+    }
+
+   
+}

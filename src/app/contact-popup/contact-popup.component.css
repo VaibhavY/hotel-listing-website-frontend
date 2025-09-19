@@ -1,0 +1,7 @@
+.modal-dialog {
+    max-width: 650px;
+}
+.modal-content{border-radius: 0px !important;}
+.modal-body {
+    padding: 8px;
+}

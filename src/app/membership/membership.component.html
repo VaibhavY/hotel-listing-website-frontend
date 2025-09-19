@@ -1,0 +1,695 @@
+<app-header></app-header>
+    <!-- slider -->
+    <div class="innerpage-hero wow fadeInUp">
+
+        <div class="inner-header-img"></div>
+
+        <div class="innerpage-content">            
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-6 mb-4">
+                        <h1>{{heroSection?.title}}</h1>
+                        <p [innerHTML]="heroSection?.description"></p>
+                        <div class="btn-set">
+                            <a href="https://www.instagram.com/luxi.day/" target="_blank" class="btn">View Gallery</a>
+                            <a href="https://www.instagram.com/luxi.day/" target="_blank" class="btn btn-light">View Video</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-6">
+                        <app-header-contact></app-header-contact>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        
+    </div>
+
+<!--exclusive member section start here-->
+<div class="exclusive-member-seciton pt-100 py-60 wow fadeInUp">
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2>{{topSection?.title}}</h2>
+            <p class="mx-auto col-md-10 col-lg-7 mt-4" [innerHTML]="topSection?.description"></p>
+        </div>
+    </div>
+    
+    <div class="row wow fadeInUp py-60">
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="mebership-area">
+                <div class="thumbnail-box">
+                    <img src="assets/img/recort_1.png"/>
+                </div>
+                <!-- <h5>Access 140+ Resorts Worldwide</h5> -->
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="mebership-area down-bottom">
+                <!-- <h5>Access 140+ Resorts Worldwide</h5> -->
+                <div class="thumbnail-box">
+                    <img src="assets/img/recort_2.png"/>
+                </div>                    
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="mebership-area">
+                <div class="thumbnail-box">
+                    <img src="assets/img/recort_3.png"/>
+                </div>
+                <!-- <h5>Premium Spacious Rooms</h5> -->
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="mebership-area">
+                <div class="thumbnail-box">
+                    <img src="assets/img/recort_4.png"/>
+                </div>
+               <!--  <h5>Club M Select</h5> -->
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="mebership-area down-bottom">
+                <!-- <h5>Global Presence</h5> -->
+                <div class="thumbnail-box">
+                    <img src="assets/img/recort_5.png"/>
+                </div>                    
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="mebership-area">
+                <div class="thumbnail-box">
+                    <img src="assets/img/recort_6.png"/>
+                </div>
+                <!-- <h5>#HappyHub</h5> -->
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+</div>
+
+<!--Most Loved Resorts-->
+
+<div class="most-loved-section py-60 wow fadeInUp">
+    <div class="container">
+        <div class="row mb-4 align-items-center">
+            <div class="col-lg-8 mb-4">
+                <div class="common-title">
+                    <h5>Help us get to know you & we will suggest a plan that fits perfectly!</h5>
+                    <h2>Find the Right Membership Plan for You</h2>
+                </div>
+                
+            </div>
+            <div class="col-lg-4">
+                <div class="abouts2 text-lg-end">
+                    <a routerLink="/contact-us" class="btn">Help me Choose</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <section class="game-section">
+                <div class="owl-carousel most_loved_resorts custom-carousel owl-theme">
+                    <div class="item">
+                        <img src="assets/img/three.png">
+                        <!-- <div class="item-desc">
+                            <h3>The Ananta Udaipur</h3>
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i> Udaipur</span>
+                            <span class="userclass"><i class="fa fa-user" aria-hidden="true"></i> 638374 families loved this</span>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/two.png">
+                        <!-- <div class="item-desc">
+                            <h3>Lotus Ananta Elite, Kota</h3>
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i> Kota</span>
+                            <span class="userclass"><i class="fa fa-user" aria-hidden="true"></i> 345345 families loved this</span>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/one.png">
+                        <!-- <div class="item-desc">
+                            <h3>Ananta Spa & Resort, Jaipur</h3>
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i> Jaipur</span>
+                            <span class="userclass"><i class="fa fa-user" aria-hidden="true"></i> 123123 families loved this</span>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+<!--Popular on Magic stream section start here-->
+
+<div class="popular-magic-section py-60 bg-dark wow fadeInUp">
+<div class="container">
+    <div class="row mb-4">
+        <div class="col-lg-6 mb-4">
+            <div class="common-title">
+                <h5 class="text-white">Benefits</h5>
+                <h2 class="text-white">Membership Benefits</h2>
+            </div>
+            
+        </div>
+        <div class="col-lg-6">
+            <div class="abouts2">
+                <p class="text-white">With access to 140+ awe-inspiring resorts in India and abroad, the world opens itself upto you. Filled with over 2000 enriching experiences and joyous moments. Unwind in luxurious floating cottages, tree houses, cabins, tents, ice igloos and pool villas. Your membership offers you all this and more.</p>
+               <!-- <a href="#">View All</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="owl-carousel autoplay3 custom-carousel owl-theme slider">
+        <div class="item">
+            <div class="happy-club-card">
+                <img src="assets/img/first_1.png" alt="image2">
+                <div class="overlay">
+                    <h3>Holiday pe Jaana Kahan Hai</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="happy-club-card">
+                <img src="assets/img/image_3.png" alt="image2">
+                <div class="overlay">
+                    <h3>Holiday pe Jaana Kahan Hai</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="happy-club-card">
+                <img src="assets/img/sec.png" alt="image2">
+                <div class="overlay">
+                    <h3>Holiday pe Jaana Kahan Hai</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="happy-club-card">
+                <img src="assets/img/first_1.png" alt="image2">
+                <div class="overlay">
+                    <h3>Holiday pe Jaana Kahan Hai</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="happy-club-card">
+                <img src="assets/img/first_1.png" alt="image2">
+                <div class="overlay">
+                    <h3>Holiday pe Jaana Kahan Hai</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="happy-club-card">
+                <img src="assets/img/image_3.png" alt="image2">
+                <div class="overlay">
+                    <h3>Holiday pe Jaana Kahan Hai</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="happy-club-card">
+                <img src="assets/img/sec.png" alt="image2">
+                <div class="overlay">
+                    <h3>Holiday pe Jaana Kahan Hai</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="happy-club-card">
+                <img src="assets/img/first_1.png" alt="image2">
+                <div class="overlay">
+                    <h3>Holiday pe Jaana Kahan Hai</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+
+<!--New Hotels section-->
+
+<div class="new-hotel-section py-60 wow fadeInUp">
+    <div class="container">
+
+        <div class="row wow fadeInUp">
+            <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp">
+                <div class="membership_card bronze_card wow fadeInUp">
+                    <div class="card_header_top">
+                        <h3>Hotel Name Here</h3>
+                        <div class="hotel_logo">
+                            <img src="assets/img/membership_card/hotel_logo.png"/>
+                        </div>
+                    </div>
+
+                    <div class="member_detials">
+                        <h2>User Name</h2>
+                        <div class="card_experiry">
+                            <p>Validity</p>
+                            <h4>20/2/25</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp">
+                <div class="membership_card sliver_card wow fadeInUp">
+                    <div class="card_header_top">
+                        <h3>Hotel Name Here</h3>
+                        <div class="hotel_logo">
+                            <img src="assets/img/membership_card/hotel_logo.png"/>
+                        </div>
+                    </div>
+
+                    <div class="member_detials">
+                        <h2>User Name</h2>
+                        <div class="card_experiry">
+                            <p>Validity</p>
+                            <h4>20/2/25</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp">
+                <div class="membership_card platinum_card wow fadeInUp">
+                    <div class="card_header_top">
+                        <h3>Hotel Name Here</h3>
+                        <div class="hotel_logo">
+                            <img src="assets/img/membership_card/hotel_logo.png"/>
+                        </div>
+                    </div>
+
+                    <div class="member_detials">
+                        <h2>User Name</h2>
+                        <div class="card_experiry">
+                            <p>Validity</p>
+                            <h4>20/2/25</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+       <!-- <div class="benefit-card become_member text-center">
+         <h4 class="mb-2">Become a LuxiDay Member</h4>
+         <p class="display-6 fw-light text-center text-white mb-0">Membership Starts at</p> 
+         <p class="display-6 fw-light text-center text-white">₹ 4,02,296*</p>
+       </div> -->
+    </div>
+</div>
+
+<!-- <div class="new-hotel-section py-60 wow fadeInUp">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let package of packages" class="col-lg-4">
+                <div class="benefit-card become_member text-center" [ngClass]="package.css_class">
+                    <h4 class="mb-2">{{package.title}}</h4>
+                    <p class="display-6 fw-light text-center text-white mb-0">Starts at</p> 
+                    <p class="display-6 fw-light text-center text-white">₹ {{package.price}}*</p>
+                  </div>
+            </div>
+            
+        </div>
+       
+    </div>
+</div> -->
+
+  
+<!--contact us section-->
+<div class="mt-5">
+    <div class="most-loved-section contact-us-section py-60 wow fadeInUp">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-12">
+                <div class="common-title">
+                    <h2>Membership Form</h2>
+                    <div class="contact-us-form mt-4">
+                        <form>
+                            <div class="row">
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Flat No.</label>
+                                    <input type="text" class="form-control" id="flat_no" placeholder="Enter your Flat No">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Name of Premises / Building </label>
+                                    <input type="text" class="form-control" id="building" placeholder="Enter your Name of Premises / Building ">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Name of Road/Street/Lane</label>
+                                    <input type="text" class="form-control" id="street" placeholder="Enter your Name of Road/Street/Lane">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Name of Area/Locality</label>
+                                    <input type="text" class="form-control" id="area" placeholder="Enter your Name of Area/Locality">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Landmark</label>
+                                    <input type="text" class="form-control" id="landmark" placeholder="Enter your Landmark">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">City</label>
+                                    <input type="text" class="form-control" id="city" placeholder="Enter your City">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">State</label>
+                                    <input type="text" class="form-control" id="state" placeholder="Enter your State">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Country</label>
+                                    <input type="text" class="form-control" id="country" placeholder="Enter your Country">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Postal Code(PIN)</label>
+                                    <input type="text" class="form-control" id="postal_code" maxlength="6" placeholder="Enter your Postal Code(PIN)">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Mobile Number</label>
+                                    <input type="text" class="form-control" id="mobile" maxlength="10" placeholder="Enter your Mobile Number">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Alternate Mobile Number</label>
+                                    <input type="text" class="form-control" id="alt_mobile" maxlength="10" placeholder="Enter your Alternate Mobile Number">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Landline Number</label>
+                                    <input type="text" class="form-control" id="land_line" placeholder="Enter your Landline Number">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Email ID</label>
+                                    <input type="text" class="form-control" id="email" placeholder="Enter your Email ID">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">PAN No</label>
+                                    <input type="text" class="form-control" id="pan_no" placeholder="Enter your PAN No">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                <div class="mb-3">
+                                <label for="fname">Address Proff</label>
+                                <select id="address_proof" class="form-select">
+                                <option value="Aadhar Card Number">Aadhar Card Number</option>
+                                <option value="Passport Number">Passport Number</option>
+                                <option value="Driving Licence Number">Driving Licence Number</option>
+                                <option value="Voter ID Number">Voter ID Number</option>
+                                </select>
+                                </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Selected Address Proof No</label>
+                                    <input type="text" class="form-control" id="address_proof_no">
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>Communication Address</h4><hr>
+                            <div class="row">
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Flat No.</label>
+                                    <input type="text" class="form-control" id="c_name" placeholder="Enter your Flat No.">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Name of Premises / Building</label>
+                                    <input type="text" class="form-control" id="c_building" placeholder="Enter your Name of Premises / Building">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Name of Road/Street/Lane</label>
+                                    <input type="text" class="form-control" id="c_street" placeholder="Enter your Name of Road/Street/Lane">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Name of Area/Locality</label>
+                                    <input type="text" class="form-control" id="c_area" placeholder="Enter your Name of Area/Locality">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Landmark</label>
+                                    <input type="text" class="form-control" id="c_landmark" placeholder="Enter your Landmark">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">City</label>
+                                    <input type="text" class="form-control" id="c_city" placeholder="Enter your City">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">State</label>
+                                    <input type="text" class="form-control" id="c_state" placeholder="Enter your State">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Country</label>
+                                    <input type="text" class="form-control" id="c_country" placeholder="Enter your Country">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Postal Code(PIN) </label>
+                                    <input type="text" class="form-control" id="c_postal_code" placeholder="Enter your Postal Code(PIN) ">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Mobile Number</label>
+                                    <input type="text" class="form-control" id="c_mobile" placeholder="Enter your Mobile Number">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Alternate Mobile Number</label>
+                                    <input type="text" class="form-control" id="c_alt_mobile" placeholder="Enter your Alternate Mobile Number">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Landline Number</label>
+                                    <input type="text" class="form-control" id="c_landline" placeholder="Enter your Landline Number">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Email Address</label>
+                                    <input type="text" class="form-control" id="c_email" placeholder="Enter your Email Address">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4>Beneficiary Details</h4><hr>
+                            <div class="row">
+                                <div class="col-12 col-sm-3">
+                                <div class="mb-3">
+                                <label for="fname">Salutation</label>
+                                <select id="salutation" class="form-select">
+                                <option value="Mr">Mr</option>
+                                <option value="Ms">Ms</option>
+                                <option value="Mrs">Mrs</option>
+                                </select>
+                                </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                <div class="mb-3">
+                                <label for="fname">Name</label>
+                                <input type="text" class="form-control" id="b_name" placeholder="Enter your Name">
+                                </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                <div class="mb-3">
+                                <label for="fname">Gender</label>
+                                <select id="b_gender" class="form-select">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                </select>
+                                </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Nationatilty</label>
+                                    <input type="text" class="form-control" id="b_nationality" placeholder="Enter your Nationatilty">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">DOB</label>
+                                    <input type="date" class="form-control" id="b_dob" placeholder="Enter your DOB">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                <div class="mb-3">
+                                <label for="fname">Relation with the main applicant</label>
+                                <select id="b_relation" class="form-select">
+                                <option value="Father">Father</option>
+                                <option value="Mother">Mother</option>
+                                <option value="Spouse">Spouse</option>
+                                <option value="Son">Son</option>
+                                <option value="Daughter">Daughter</option>
+                                </select>
+                                </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">PAN No</label>
+                                    <input type="text" class="form-control" id="b_pan_no" placeholder="Enter your PAN No">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                <div class="mb-3">
+                                <label for="fname">Address Proff</label>
+                                <select id="b_address_proof" class="form-select">
+                                <option value="Aadhar Card Number">Aadhar Card Number</option>
+                                <option value="Passport Number">Passport Number</option>
+                                <option value="Driving Licence Number">Driving Licence Number</option>
+                                <option value="Voter ID Number">Voter ID Number</option>
+                                </select>
+                                </div>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <div class="mb-3">
+                                    <label for="fname">Selected Address Proof No</label>
+                                    <input type="text" class="form-control" id="b_address_proof_no">
+                                    </div>
+                                </div>
+                                 
+                            </div>
+                            <button type="button" (click)="saveContact()"  id="joinBtn" class="btn btn-primary">Join the club</button> 
+                          </form>
+                        
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+        
+       
+    </div>        
+</div>
+</div>
+
+
+
+<!--Interesting Stories from Our Members section-->
+<!-- <div class="intersting-stories py-60 wow fadeInUp">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-lg-6 mb-4">
+                <div class="common-title">
+                    <h2 class="">Interesting Stories from Our Members</h2>
+                </div>
+                
+            </div>
+            <div class="col-lg-6">
+                <div class="abouts2">
+                    <p class="">A family vacation is an album of memories… one that’s waiting to be shared. Read through our Club Mahindra membership reviews to find out what makes a resort story so special. </p>                   
+                </div>
+            </div>
+        </div>
+
+        <div class="videosection">
+            <div class="owl-carousel autoplay5">
+                <div class="item-video">
+                    <div class="video-container">
+                        <video controls>
+                            <source src="assets/img/videoplayback.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="item-video">
+                    <div class="video-container">
+                        <video controls>
+                            <source src="assets/img/videoplayback.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="item-video">
+                    <div class="video-container">
+                        <video controls>
+                            <source src="assets/img/videoplayback.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<app-footer></app-footer>
+
+<!--Become a Member page-->
+<app-become-a-member></app-become-a-member>

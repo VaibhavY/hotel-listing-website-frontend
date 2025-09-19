@@ -1,0 +1,107 @@
+
+<app-header></app-header>
+
+
+
+<!--Blog section start here-->
+<div class="our-latest-blog py-60 wow fadeInUp mt-5">
+<div class="container">
+
+    <div class="row wow fadeInUp">
+        <div class="col-lg-6">
+            <div class="blog-post-big" *ngIf="blogs[0]">
+                <div class="post-thumbnail">
+                    <a routerLink="/blog/{{blogs[0]?.slug}}"><img src="{{blogs[0]?.blog_banner}}" class="img-fluid"/></a>
+                </div>
+                <div class="post-content">
+                    <div class="posted-on d-flex align-items-center fw-light">
+                        <i class="me-2"><img src="assets/img/calendar.svg"></i> {{blogs[0]?.post_date}}
+                    </div>
+                    <h3 class="mb-4 mt-md-4 mt-3"><a routerLink="/blog/{{blogs[0]?.slug}}">{{blogs[0]?.title}}</a></h3>
+                    <a routerLink="/blog/{{blogs[0]?.slug}}" class="d-flex align-items-center">Read More <i class="ms-2"><img src="assets/img/read_more.svg"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-12 mb-4" *ngIf="blogs[1]">
+                    <div class="blog-post-small">
+                        <div class="post-thumbnail">
+                            <a routerLink="/blog/{{blogs[1]?.slug}}"><img src="assets/img/barefoot-resort-havelock.png"/></a>
+                        </div>
+                        <div class="post-content pt-0">
+                            <div class="posted-on d-flex align-items-center fw-light">
+                                <i class="me-2"><img src="assets/img/calendar.svg"></i> {{blogs[1]?.post_date}}
+                            </div>
+                            <h3 class="mb-2 mt-2"><a routerLink="/blog/{{blogs[1]?.slug}}">{{blogs[1]?.title}}</a></h3>
+                            <a routerLink="/blog/{{blogs[1]?.slug}}" class="d-flex align-items-center">Read More <i class="ms-2"><img src="assets/img/read_more.svg"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-4" *ngIf="blogs[2]">
+                    <div class="blog-post-small">
+                        <div class="post-thumbnail">
+                            <a routerLink="/blog/{{blogs[2]?.slug}}"><img src="assets/img/barefoot-resort-havelock.png"/></a>
+                        </div>
+                        <div class="post-content pt-0">
+                            <div class="posted-on d-flex align-items-center fw-light">
+                                <i class="me-2"><img src="assets/img/calendar.svg"></i> {{blogs[2]?.post_date}}
+                            </div>
+                            <h3 class="mb-2 mt-2"><a routerLink="/blog/{{blogs[2]?.slug}}">{{blogs[2]?.title}}</a></h3>
+                            <a routerLink="/blog/{{blogs[2]?.slug}}" class="d-flex align-items-center">Read More <i class="ms-2"><img src="assets/img/read_more.svg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="about-us-section wow fadeInUp">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4 wow fadeInUp">
+                <div class="happy-club-card ">
+                    <img src="assets/img/first_1.png" alt="image" />
+                    <div class="overlay">
+                        <h3>Happy Hub</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4 wow fadeInUp">
+                <div class="happy-club-card">
+                    <img src="assets/img/image_3.png" alt="image2" />
+                    <div class="overlay">
+                        <h3>Happy Hub</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4 wow fadeInUp">
+                <div class="happy-club-card">
+                    <img src="assets/img/sec.png" alt="image3" />
+                    <div class="overlay">
+                        <h3>Happy Hub</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
+
+
+
+<!--Popular Search Resorts section-->
+
+<app-popular-search></app-popular-search>
+<!--Footer section start here-->
+<app-footer></app-footer>
+<!--Become a Member page-->
+<app-become-a-member></app-become-a-member>
+

@@ -1,0 +1,633 @@
+
+  <app-header></app-header>
+    
+
+    <!-- slider -->
+    <div class="hero-slider wow fadeInUp">
+        <video class="video-header" width="100%" autoplay muted loop playsinline preload="metadata">
+            <source src="assets/img/intro_video.mp4" type="video/mp4">
+        </video> 
+
+        <div class="hero-banner-content">
+            <h1>Discover a World of Exclusive Holidays with LuxiDay</h1>
+            <p>Your gateway to unparalleled travel experiences and long-lasting memories.</p>
+            <a class="btn" href="#">Request a Quote</a>
+        </div>
+        
+    </div>
+
+
+<!--About us section start here-->
+<div class="about-us-section py-60 wow fadeInUp">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-lg-6 mb-4">
+                <div class="common-title wow fadeInUp">
+                    <h5>About Us</h5>
+                    <h2>{{sectionOne?.title}}</h2>
+                </div>
+                <p class="mb-4 wow fadeInUp" [innerHTML]="sectionOne?.description"></p>
+                <ul>
+                    <li>Tailored membership plans with flexible stay options.</li>
+                    <li>Partnerships with top-tier hotels and resorts across India.</li>
+                    <li>Unique prepaid models ensuring savings and premium experiences.</li>
+                </ul>
+                <a routerLink="/experience" class="btn">Discover More</a>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 wow fadeInUp">
+                <div class="owl-carousel testimonials-list">
+
+                    <div class="abouts2 ps-md-5 fst-italic" *ngFor="let testimonial of testimonials">
+                        <p>“ {{testimonial.description}} ”</p>
+    
+                        <div class="imagesmale wow fadeInUp"><img src="{{testimonial.pic}}" /></div>
+                        <div class="nametext wow fadeInUp">{{testimonial.user_name}}</div>
+                        <div class="postionposts wow fadeInUp">{{testimonial.designation}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4 wow fadeInUp">
+                <div class="happy-club-card ">
+                    <img src="assets/img/first_1.png" alt="image" />
+                    <div class="overlay">
+                        <h3>Stay Experiences </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4 wow fadeInUp">
+                <div class="happy-club-card">
+                    <img src="assets/img/image_3.png" alt="image2" />
+                    <div class="overlay">
+                        <h3>Happy Hub</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4 wow fadeInUp">
+                <div class="happy-club-card">
+                    <img src="assets/img/sec.png" alt="image3" />
+                    <div class="overlay">
+                        <h3>Dining Experiences</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+   
+
+<!--Most Loved Resorts-->
+
+<div class="most-loved-section py-60 wow fadeInUp">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-lg-6 mb-4">
+                <div class="common-title">
+                    <h5>Best Destinations</h5>
+                    <h2>{{sectionTwo?.title}}</h2>
+                </div>
+                
+            </div>
+            <div class="col-lg-6">
+                <div class="abouts2">
+                    <p [innerHTML]="sectionTwo?.description"></p>
+                   <a routerLink="/membership">View All</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <section class="game-section">
+                <div class="owl-carousel most_loved_resorts custom-carousel owl-theme">
+                    <div class="item">
+                        <img src="assets/img/three.png">
+                        <!-- <div class="item-desc">
+                            <h3>The Ananta Udaipur</h3>
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i> Udaipur</span>
+                            <span class="userclass"><i class="fa fa-user" aria-hidden="true"></i> 638374 families loved this</span>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/two.png">
+                        <!-- <div class="item-desc">
+                            <h3>Lotus Ananta Elite, Kota</h3>
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i> Kota</span>
+                            <span class="userclass"><i class="fa fa-user" aria-hidden="true"></i> 345345 families loved this</span>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/one.png">
+                        <!-- <div class="item-desc">
+                            <h3>Ananta Spa & Resort, Jaipur</h3>
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i> Jaipur</span>
+                            <span class="userclass"><i class="fa fa-user" aria-hidden="true"></i> 123123 families loved this</span>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<!--New Hotels section-->
+
+<div class="new-hotel-section py-60 wow fadeInUp">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-lg-6 mb-4">
+                <div class="common-title">
+                    
+                    <h2>New Hotels, <br class="d-none d-lg-block"/>New Memories </h2>
+                </div>
+                
+            </div>
+            <div class="col-lg-6">
+                <div class="abouts2">
+                    <p [innerHTML]="sectionThree?.description"></p>
+                   <a routerLink="/resorts">View All</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row wow fadeInUp">
+            <div class="col-lg-6 mb-4">
+                <div class="hotel-card">
+                    <a routerLink="/hotel/{{latestHotels[0]?.slug}}"><img src="{{latestHotels[0]?.banner}}" width="100%"/></a>
+                    <div class="hotel-info-box">
+                        <h4 class="mb-2"><a routerLink="/hotel/{{latestHotels[0]?.slug}}" class="text-white">{{latestHotels[0]?.title}}</a></h4>
+                        <div class="location-detail d-flex align-items-center text-white fw-light mb-2">
+                            <i class="me-2"><img src="assets/img/location_icon.svg"></i> {{latestHotels[0]?.city}}, {{latestHotels[0]?.state}}
+                        </div>
+                        <div class="location-detail d-flex align-items-center text-white fw-light">
+                            <i class="me-2"><img src="assets/img/family_icon.svg"></i> 638374 families loved this
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="hotel-right-card">
+                            <a routerLink="/hotel/{{latestHotels[1]?.slug}}"><img src="{{latestHotels[1]?.banner}}" width="100%" height="100%" /></a>
+                            <div class="hotel-right-card-detials">
+                                <h4 class="mb-2"><a routerLink="/hotel/{{latestHotels[1]?.slug}}">{{latestHotels[1]?.title}}</a></h4>
+                                <div class="location-detail d-flex align-items-center text-white fw-light mb-2">
+                                    <i class="me-2"><img src="assets/img/location_icon.svg"></i> {{latestHotels[1]?.city}}, {{latestHotels[1]?.state}}
+                                </div>
+                                <div class="location-detail d-flex align-items-center text-white fw-light">
+                                    <i class="me-2"><img src="assets/img/family_icon.svg"></i> 638374 families loved this
+                                </div>                                  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="hotel-right-card">
+                            <a routerLink="/hotel/{{latestHotels[2]?.slug}}"><img src="{{latestHotels[2]?.banner}}" width="100%" height="100%" /></a>
+                            <div class="hotel-right-card-detials">
+                                <h4 class="mb-2"><a routerLink="/hotel/{{latestHotels[2]?.slug}}">{{latestHotels[2]?.title}}</a></h4>
+                                <div class="location-detail d-flex align-items-center text-white fw-light mb-2">
+                                    <i class="me-2"><img src="assets/img/location_icon.svg"></i> {{latestHotels[2]?.city}}, {{latestHotels[2]?.state}}
+                                </div>
+                                <div class="location-detail d-flex align-items-center text-white fw-light">
+                                    <i class="me-2"><img src="assets/img/family_icon.svg"></i> 638374 families loved this
+                                </div>                                  
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 mb-4">
+                        <div class="hotel-right-card">
+                            <a routerLink="/hotel/{{latestHotels[3]?.slug}}"><img src="{{latestHotels[3]?.banner}}" width="100%" height="100%" /></a>
+                            <div class="hotel-right-card-detials">
+                                <h4 class="mb-2"><a routerLink="/hotel/{{latestHotels[3]?.slug}}">{{latestHotels[3]?.title}}</a></h4>
+                                <div class="location-detail d-flex align-items-center text-white fw-light mb-2">
+                                    <i class="me-2"><img src="assets/img/location_icon.svg"></i> {{latestHotels[3]?.city}}, {{latestHotels[3]?.state}}
+                                </div>
+                                <div class="location-detail d-flex align-items-center text-white fw-light">
+                                    <i class="me-2"><img src="assets/img/family_icon.svg"></i> 638374 families loved this
+                                </div>                                  
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 mb-4">
+                        <div class="hotel-right-card">
+                            <a routerLink="/hotel/{{latestHotels[4]?.slug}}"><img src="{{latestHotels[4]?.banner}}" width="100%" height="100%" /></a>
+                            <div class="hotel-right-card-detials">
+                                <h4 class="mb-2"><a routerLink="/hotel/{{latestHotels[4]?.slug}}">{{latestHotels[4]?.title}}</a></h4>
+                                <div class="location-detail d-flex align-items-center text-white fw-light mb-2">
+                                    <i class="me-2"><img src="assets/img/location_icon.svg"></i> {{latestHotels[4]?.city}}, {{latestHotels[4]?.state}}
+                                </div>
+                                <div class="location-detail d-flex align-items-center text-white fw-light">
+                                    <i class="me-2"><img src="assets/img/family_icon.svg"></i> 638374 families loved this
+                                </div>                                  
+                            </div>
+                        </div>
+                    </div>                        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+   
+<!--Popular on Magic stream section start here-->
+
+<div class="popular-magic-section py-60 bg-dark wow fadeInUp">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-lg-6 mb-4">
+                <div class="common-title">
+                    <h5 class="text-white">Popular stream</h5>
+                    <h2 class="text-white">{{sectionFour?.title}}</h2>
+                </div>
+                
+            </div>
+            <div class="col-lg-6">
+                <div class="abouts2">
+                    <p class="text-white" [innerHTML]="sectionFour?.description"></p>
+                   <a routerLink="/experience">View All</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="owl-carousel autoplay3 custom-carousel owl-theme slider">
+            <div class="item">
+                <div class="happy-club-card">
+                    <img src="assets/img/first_1.png" alt="image2">
+                    <div class="overlay">
+                        <h3>Holiday pe jaana kahan hai? LuxiDay ke saath har jagah hai!</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="happy-club-card">
+                    <img src="assets/img/image_3.png" alt="image2">
+                    <div class="overlay">
+                        <h3>Your dream destination, just a membership away!</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="happy-club-card">
+                    <img src="assets/img/sec.png" alt="image2">
+                    <div class="overlay">
+                        <h3>Popular spots, unforgettable moments – LuxiDay makes it happen.</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="happy-club-card">
+                    <img src="assets/img/first_1.png" alt="image2">
+                    <div class="overlay">
+                        <h3>Plan less, explore more – The LuxiDay way.</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="happy-club-card">
+                    <img src="assets/img/first_1.png" alt="image2">
+                    <div class="overlay">
+                        <h3>Holiday pe jaana kahan hai? LuxiDay ke saath har jagah hai!</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="happy-club-card">
+                    <img src="assets/img/image_3.png" alt="image2">
+                    <div class="overlay">
+                        <h3>Your dream destination, just a membership away!</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="happy-club-card">
+                    <img src="assets/img/sec.png" alt="image2">
+                    <div class="overlay">
+                        <h3>Popular spots, unforgettable moments – LuxiDay makes it happen.</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="happy-club-card">
+                    <img src="assets/img/first_1.png" alt="image2">
+                    <div class="overlay">
+                        <h3>Plan less, explore more – The LuxiDay way.</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--Blog section start here-->
+<div class="our-latest-blog py-60 wow fadeInUp mt-5">
+    <div class="container">
+    
+        <div class="row wow fadeInUp">
+            <div class="col-lg-6">
+                <div class="blog-post-big" *ngIf="blogs[0]">
+                    <div class="post-thumbnail">
+                        <a routerLink="/blog/{{blogs[0]?.slug}}"><img src="{{blogs[0]?.blog_banner}}" class="img-fluid"/></a>
+                    </div>
+                    <div class="post-content">
+                        <div class="posted-on d-flex align-items-center fw-light">
+                            <i class="me-2"><img src="assets/img/calendar.svg"></i> {{blogs[0]?.post_date}}
+                        </div>
+                        <h3 class="mb-4 mt-md-4 mt-3"><a routerLink="/blog/{{blogs[0]?.slug}}">{{blogs[0]?.title}}</a></h3>
+                        <a routerLink="/blog/{{blogs[0]?.slug}}" class="d-flex align-items-center">Read More <i class="ms-2"><img src="assets/img/read_more.svg"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-12 mb-4" *ngIf="blogs[1]">
+                        <div class="blog-post-small">
+                            <div class="post-thumbnail">
+                                <a routerLink="/blog/{{blogs[1]?.slug}}"><img src="assets/img/barefoot-resort-havelock.png"/></a>
+                            </div>
+                            <div class="post-content pt-0">
+                                <div class="posted-on d-flex align-items-center fw-light">
+                                    <i class="me-2"><img src="assets/img/calendar.svg"></i> {{blogs[1]?.post_date}}
+                                </div>
+                                <h3 class="mb-2 mt-2"><a routerLink="/blog/{{blogs[1]?.slug}}">{{blogs[1]?.title}}</a></h3>
+                                <a routerLink="/blog/{{blogs[1]?.slug}}" class="d-flex align-items-center">Read More <i class="ms-2"><img src="assets/img/read_more.svg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 mb-4" *ngIf="blogs[2]">
+                        <div class="blog-post-small">
+                            <div class="post-thumbnail">
+                                <a routerLink="/blog/{{blogs[2]?.slug}}"><img src="assets/img/barefoot-resort-havelock.png"/></a>
+                            </div>
+                            <div class="post-content pt-0">
+                                <div class="posted-on d-flex align-items-center fw-light">
+                                    <i class="me-2"><img src="assets/img/calendar.svg"></i> {{blogs[2]?.post_date}}
+                                </div>
+                                <h3 class="mb-2 mt-2"><a routerLink="/blog/{{blogs[2]?.slug}}">{{blogs[2]?.title}}</a></h3>
+                                <a routerLink="/blog/{{blogs[2]?.slug}}" class="d-flex align-items-center">Read More <i class="ms-2"><img src="assets/img/read_more.svg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+<!--out featured clients section -->
+<div class="most-loved-section py-60 wow fadeInUp">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="common-title">
+                    <h5>Trusted Collaborations</h5>
+                    <h2>{{sectionFive?.title}}</h2>
+                </div>
+                
+            </div>
+            <div class="col-lg-6">
+                <div class="abouts2">
+                    <p [innerHTML]="sectionFive?.description"></p>
+                   <!-- <a href="#">View All</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="features-logo-section owl-carousel featured-clients">
+                    <div class="single-col"><img src="assets/img/final/01.jpg" /></div>
+                    <div class="single-col"><img src="assets/img/final/02.jpg" /></div>
+                    <div class="single-col"><img src="assets/img/final/03.jpg" /></div>
+                    <div class="single-col"><img src="assets/img/final/04.jpg" /></div>
+                    <div class="single-col"><img src="assets/img/final/05.jpg" /></div>
+                    <div class="single-col"><img src="assets/img/final/06.jpg" /></div>
+                    <div class="single-col"><img src="assets/img/final/07.jpg" /></div>
+                    <div class="single-col"><img src="assets/img/final/08.jpg" /></div>
+                    <div class="single-col"><img src="assets/img/final/09.jpg" /></div>
+                    <div class="single-col"><img src="assets/img/final/10.jpg" /></div>
+                    <div class="single-col"><img src="assets/img/final/11.jpg" /></div>
+                    <div class="single-col"><img src="assets/img/final/12.jpg" /></div>
+                    <div class="single-col"><img src="assets/img/final/13.jpg" /></div>
+                </div>
+            </div>
+        </div>
+       
+    </div>        
+</div>
+
+<!--exclusive member section start here-->
+<div class="exclusive-member-seciton py-60 wow fadeInUp">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>{{sectionSix?.title}}</h2>
+                <p class="mx-auto col-md-9 col-lg-6 mt-4" [innerHTML]="sectionSix?.description"></p>
+            </div>
+        </div>   
+        
+        <div class="holidaybox mt-4 mt-lg-5">
+            <div class="owl-carousel autoplay4">
+
+                <div class="item">
+                    <div class="benefit-card">
+                        <h4>Prearranged holidays to festivals and events</h4>
+                        <!-- <a href="#" class="btn know-more-btn">Know More</a> -->
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="benefit-card orange-box">
+                        <h4>Curated experiential holidays</h4>
+                        <!-- <a href="#" class="btn know-more-btn">Know More</a> -->
+                    </div>
+                    
+                </div>
+
+                <div class="item">
+                    <div class="benefit-card">
+                        <h4>Exceptional holidays at 4300+ Luxiday resorts </h4>
+                       <!--  <a href="#" class="btn know-more-btn">Know More</a> -->
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="benefit-card orange-box">
+                        <h4>Curated experiential holidays</h4>
+                        <!-- <a href="#" class="btn know-more-btn">Know More</a> -->
+                    </div>                        
+                </div>
+
+                <div class="item">
+                    <div class="benefit-card">
+                        <h4>Exceptional holidays at 4300+ Luxiday resorts </h4>
+                        <!-- <a href="#" class="btn know-more-btn">Know More</a> -->
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="new-hotel-section py-60 wow fadeInUp">
+    <div class="container">
+
+        <div class="row wow fadeInUp">
+            <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp">
+                <div class="membership_card bronze_card wow fadeInUp">
+                    <div class="card_header_top">
+                        <h3>Hotel Name Here</h3>
+                        <div class="hotel_logo">
+                            <img src="assets/img/membership_card/hotel_logo.png"/>
+                        </div>
+                    </div>
+
+                    <div class="member_detials">
+                        <h2>User Name</h2>
+                        <div class="card_experiry">
+                            <p>Validity</p>
+                            <h4>20/2/25</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp">
+                <div class="membership_card sliver_card wow fadeInUp">
+                    <div class="card_header_top">
+                        <h3>Hotel Name Here</h3>
+                        <div class="hotel_logo">
+                            <img src="assets/img/membership_card/hotel_logo.png"/>
+                        </div>
+                    </div>
+
+                    <div class="member_detials">
+                        <h2>User Name</h2>
+                        <div class="card_experiry">
+                            <p>Validity</p>
+                            <h4>20/2/25</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp">
+                <div class="membership_card platinum_card wow fadeInUp">
+                    <div class="card_header_top">
+                        <h3>Hotel Name Here2</h3>
+                        <div class="hotel_logo">
+                            <img src="assets/img/membership_card/hotel_logo.png"/>
+                        </div>
+                    </div>
+
+                    <div class="member_detials">
+                        <h2>User Name</h2>
+                        <div class="card_experiry">
+                            <p>Validity</p>
+                            <h4>20/2/25</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="text-center">
+         <a routerLink="/membership-from" class="btn">Apply Now</a>
+       </div> 
+    </div>
+</div>
+  
+<!--contact us section-->
+<app-footer-contact></app-footer-contact>
+
+
+<!--Interesting Stories from Our Members section-->
+<div class="intersting-stories py-60 wow fadeInUp">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-lg-6 mb-4">
+                <div class="common-title">
+                    <h2 class="">{{sectionSeven?.title}}</h2>
+                </div>
+                
+            </div>
+            <div class="col-lg-6">
+                <div class="abouts2">
+                    <p class="" [innerHTML]="sectionSeven?.description"></p>                   
+                </div>
+            </div>
+        </div>
+
+        <div class="videosection">
+            <div class="owl-carousel autoplay5">
+                <div class="item-video">
+                    <div class="video-container">
+                        <video controls>
+                            <source src="assets/img/61885-501113759_tiny.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="item-video">
+                    <div class="video-container">
+                        <video controls>
+                            <source src="assets/img/4739-179738691_tiny.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="item-video">
+                    <div class="video-container">
+                        <video controls>
+                            <source src="assets/img/128284-740892796_tiny.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-contact-popup></app-contact-popup> 
+<!--Popular Search Resorts section-->
+
+<app-popular-search></app-popular-search>
+<!--Footer section start here-->
+<app-footer></app-footer>
+
+

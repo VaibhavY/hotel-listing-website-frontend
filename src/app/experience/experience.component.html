@@ -1,0 +1,212 @@
+<app-header></app-header>
+    <!-- slider -->
+    <div class="innerpage-hero wow fadeInUp">
+        <div class="inner-header-img"></div>
+        <div class="innerpage-content">
+            <div class="container">               
+                <div class="row">
+                    <div class="col-lg-7 col-md-6 mb-4">
+                        <h1>{{heroSection?.title}}</h1>
+                        <p [innerHTML]="heroSection?.description"></p>
+                        <div class="btn-set">
+                            <a href="https://www.instagram.com/luxi.day/" target="_blank" class="btn" id="view_gallery">View Gallery</a>
+                            <a href="https://www.instagram.com/luxi.day/" target="_blank" class="btn btn-light">View Video</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-6">
+                        <app-header-contact></app-header-contact>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        
+    </div>
+
+<!--exclusive member section start here-->
+<div class="exclusive-member-seciton pt-100 py-60 wow fadeInUp">
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2>{{topSection?.title}}</h2>
+            <p [innerHTML]="topSection?.description" class="mx-auto col-md-10 col-lg-7 mt-4"></p>
+        </div>
+    </div>
+    
+    <div class="row wow fadeInUp py-60 pb-0">
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="mebership-area">
+                <div class="thumbnail-box">
+                    <img src="assets/img/recort_1.png"/>
+                </div>
+                <!-- <h5>Raja - Rani Poolside Dinner</h5> -->
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="mebership-area down-bottom">
+                <!-- <h5>Junior Chef </h5> -->
+                <div class="thumbnail-box">
+                    <img src="assets/img/recort_2.png"/>
+                </div>                    
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="mebership-area">
+                <div class="thumbnail-box">
+                    <img src="assets/img/recort_3.png"/>
+                </div>
+                <!-- <h5>Floating Cottages</h5> -->
+            </div>
+        </div>
+
+
+        
+    </div>
+    
+    
+</div>
+</div>
+
+
+<div class="pick-some-experience py-60 wow fadeInUp">
+<div class="container">
+    <div class="col-12 text-center">
+        <h2 class="text-white">{{blockOne?.title}}</h2>
+        <p [innerHTML]="blockOne?.description" class="mx-auto col-md-10 col-lg-7 mt-4 text-white"></p>
+    </div>
+</div>
+
+<div class="pick-some-imgslider owl-carousel mt-5">
+    <div class="item">
+        <div class="experience-box">
+            <img src="assets/img/exp_1.svg"/>
+            <h6>Local</h6>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="experience-box">
+            <img src="assets/img/exp_2.svg"/>
+            <h6>History</h6>
+        </div>
+    </div>
+
+
+    <div class="item">
+        <div class="experience-box">
+            <img src="assets/img/exp_3.svg"/>
+            <h6>Sports</h6>
+        </div>
+    </div>
+
+
+    <div class="item">
+        <div class="experience-box">
+            <img src="assets/img/exp_4.svg"/>
+            <h6>Nature</h6>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="experience-box">
+            <img src="assets/img/exp_5.svg"/>
+            <h6>Wellness</h6>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="experience-box">
+            <img src="assets/img/exp_6.svg"/>
+            <h6>International</h6>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="experience-box">
+            <img src="assets/img/exp_7.svg"/>
+            <h6>Art & Craft</h6>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="experience-box">
+            <img src="assets/img/exp_8.svg"/>
+            <h6>Adventure</h6>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="experience-box">
+            <img src="assets/img/exp_9.svg"/>
+            <h6>Spiritual</h6>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<!--Most Loved Resorts-->
+
+<div class="most-loved-section py-60 wow fadeInUp">
+    <div class="container">
+        <div class="row mb-4 align-items-center">
+            <div class="col-lg-12 mb-4">
+                <div class="common-title">
+                    <!-- <h5>Help us get to know you & we will suggest a plan that fits perfectly!</h5> -->
+                    <h2 class="mb-4">{{blockTwo?.title}}</h2>
+                    <p [innerHTML]="blockTwo?.description"></p>
+                </div>
+                
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <section class="game-section">
+                <div class="owl-carousel most_loved_resorts custom-carousel owl-theme">
+                    <div class="item">
+                        <img src="assets/img/three.png">
+                        <!-- <div class="item-desc d-flex align-items-center justify-content-between">
+                            <h3>Club Mahindra Varca</h3>
+                            <a href="#" class="btn">View More Details</a>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/two.png">
+                       <!--  <div class="item-desc d-flex align-items-center justify-content-between">
+                            <h3>Club Mahindra Varca</h3>
+                            <a href="#" class="btn">View More Details</a>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/one.png">
+                        <!-- <div class="item-desc d-flex align-items-center justify-content-between">
+                            <h3>Club Mahindra Varca</h3>
+                             <a href="#" class="btn">View More Details</a>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<app-contact-popup></app-contact-popup>
+  
+<!--contact us section-->
+<app-footer-contact></app-footer-contact>
+
+
+<!--Footer section start here-->
+<app-footer></app-footer>
+
+<!--Become a Member page-->
+<div class="become-a-meber">
+    <a href="#"><img src="assets/img/become_member.svg"/></a>
+</div>

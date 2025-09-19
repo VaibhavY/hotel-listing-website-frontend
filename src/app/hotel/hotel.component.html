@@ -1,0 +1,213 @@
+
+ <app-header></app-header>
+    
+
+     <!-- slider -->
+     <div class="innerpage-hero hotel-detail-page wow fadeInUp">
+
+        <div class="inner-header-img"></div>
+
+        <div class="hotel-details-banner">
+            <img src="{{hotelData?.hero_section_banner}}" width="100%"/>
+            <div class="hotel-details-content">               
+                <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-6 mb-4">
+                        <h1>{{hotelData?.hero_section_heading}}</h1>
+                        <p>{{hotelData?.hero_section_description}}</p>
+                       
+                    </div>
+
+                    <div class="col-lg-5 col-md-6">
+                        <app-header-contact></app-header-contact>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+  
+        
+    </div>
+
+    <!--exclusive member section start here-->
+    <div class="exclusive-member-seciton py-60 wow fadeInUp">
+        <div class="container">
+            
+            <div class="row mb-4">
+                <div class="col-lg-6 mb-4">
+                    <div class="common-title">
+                        <h2>{{hotelData?.upper_heading}}</h2>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6">
+                    <div class="abouts2">
+                        <p>{{hotelData?.upper_description}}</p>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="thumbnail">
+                        <img src="{{hotelData?.banner}}"/>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="explore-together">
+                        <h3>Let’s Explore Together</h3>
+                        <p>Where Every Stay Feels Like Coming Home. Luxury, Comfort, and You.</p> 
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 mb-3">
+                    <div class="thumbnail">
+                        <img *ngIf="property_images[0].image" src="{{property_images[0].image}}"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row wow fadeInUp my-5">
+                <div class="col-12">
+                    <!-- <div class="common-title">
+                        <h2>About Hotel Rambagh palace -Jaipur In Rambagh</h2>
+                    </div> -->
+                    <p [innerHTML]="hotelData?.description"></p>
+                </div>
+            </div>
+
+            
+            <div class="row wow fadeInup" *ngIf="property_images.length > 0">
+                
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-4 mb-3" *ngFor="let property_image of property_images">
+                            <img src="{{property_image.image}}" width="100%" class="img-fluid"/>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> 
+
+            
+        </div>
+    </div>
+
+    <div class="most-loved-section py-60 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-12 text-center mb-2">
+                    <div class="common-title text-center">
+                        <h2 class="text-center">Most Benefits</h2>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-10 mx-auto">
+                    <div class="abouts2">
+                        <p class="text-center" [innerHTML]="sectionOne?.description" ></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row wow fadeInUp">
+                <div class="col-md-3 mb-4" *ngIf="hotelData.parking_facility == 1">
+                    <div class="benefits-list">
+                        <div class="benifits-icons">
+                            <img src="assets/img/parking.svg"/>
+                        </div>
+                        <p>Parking Facility</p>
+                    </div>
+                </div>
+
+
+               <div class="col-md-3 mb-4" *ngIf="hotelData.souvenir_shop == 1">
+                <div class="benefits-list">
+                    <div class="benifits-icons">
+                        <img src="assets/img/souvenir.svg"/>
+                    </div>
+                    <p>Souvenir Shop</p>
+                </div>
+               </div>
+
+
+
+               <div class="col-md-3 mb-4" *ngIf="hotelData.laundry_service == 1">
+                <div class="benefits-list">
+                    <div class="benifits-icons">
+                        <img src="assets/img/laundry.svg"/>
+                    </div>
+                    <p>Laundry Service</p>
+                </div>
+               </div>
+
+
+               <div class="col-md-3 mb-4" *ngIf="hotelData.conference_hall == 1">
+                <div class="benefits-list">
+                    <div class="benifits-icons">
+                        <img src="assets/img/hall.svg"/>
+                    </div>
+                    <p>Conference Hall</p>
+                </div>
+               </div>
+
+
+               <!-- <div class="col-md-3 mb-4" *ngIf="hotelData.parking_facility == 1">
+                    <div class="benefits-list">
+                        <div class="benifits-icons">
+                            <img src="assets/img/parking.svg"/>
+                        </div>
+                        <p>Parking Facility</p>
+                    </div>
+                </div> -->
+
+
+                <div class="col-md-3 mb-4" *ngIf="hotelData.travel_desk == 1">
+                    <div class="benefits-list">
+                        <div class="benifits-icons">
+                            <img src="assets/img/information.svg"/>
+                        </div>
+                        <p>Travel Desk</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-3 mb-4" *ngIf="hotelData.wifi == 1">
+                    <div class="benefits-list">
+                        <div class="benifits-icons">
+                            <img src="assets/img/wifi.svg"/>
+                        </div>
+                        <p>Laundry Service</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 mb-4" *ngIf="hotelData.doctor_on_call == 1">
+                    <div class="benefits-list">
+                        <div class="benifits-icons">
+                            <img src="assets/img/doctor_call.svg"/>
+                        </div>
+                        <p>Doctor on Call</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="py-md-5 py-3"></div>
+
+<!--Popular Search Resorts section-->
+<app-popular-search></app-popular-search>
+
+<!--Footer section start here-->
+<app-footer></app-footer>
+
+<!--Become a Member page-->
+<app-become-a-member></app-become-a-member>
+

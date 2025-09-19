@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+.margin-top{ margin-top: 115px;}
+.pagiation nav{background: #fff !important; box-shadow:none; margin: auto; width: 100%; display:flex; justify-content: center;}
+.pagiation nav ul{padding-left: 0px;}
+p {
+    color: #000;
+    font-weight: 400;
+}
+.featured-clients .owl-dots{ margin-top: 30px !important;}
+.blog-description h4{color: #000;}
+.blog-description li::marker {color: #000;}

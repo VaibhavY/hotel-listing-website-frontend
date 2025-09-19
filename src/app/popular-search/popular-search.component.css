@@ -1,0 +1,13 @@
+.popular-links {
+    padding: 0;
+    margin: 0;
+    display: flex
+;
+    flex-wrap: wrap;
+    column-gap: 24px;
+}
+.popular-links li {
+    display: flex;
+    margin-bottom: 10px;
+ min-width:15%;
+}

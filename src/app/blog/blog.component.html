@@ -1,0 +1,60 @@
+<app-header></app-header>
+    <!-- slider -->
+    <div class="" style="margin-top: 100px;">
+
+        <img src="{{blogData?.banner}}" width="100%">
+        
+    </div>
+
+<!--exclusive member section start here-->
+<div class="exclusive-member-seciton py-60 wow fadeInUp">
+<div class="container">
+    <div class="row">
+        <div class="col-12"><img src="assets/img/calendar.svg" style="float: left;margin-right: 5px;"> {{blogData?.post_date}}</div>
+        <div class="col-12">
+            <h2>{{blogData?.title}}</h2>
+            <div class="mt-2 blog-description" [innerHTML]="blogData?.description"></div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="exclusive-member-seciton wow fadeInUp" *ngIf="blogs.length > 0">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col-12">
+                <h2>Our Recent Post</h2>
+            </div>
+        </div>
+        <div class="row wow fadeInUp pb-0">
+
+            <div class="col-lg-4 col-md-6 mb-3" *ngFor="let blog of blogs">
+                <div class="hotel-img">
+                    <div class="thumbnail-box">
+                        <img src="{{blog?.blog_banner}}"/>
+                    </div>
+                    <div class="hotel-descrition">
+                        <h4 class="mb-2"><a href="hotel_details.html">{{blog?.title}}</a></h4>
+                        <div class="location-icon mb-2 d-flex align-items-center">
+                            <i class="me-2"><img src="assets/img/calendar.svg"></i> {{blog?.post_date}}
+                        </div>
+                        <a routerLink="/blog/{{blog?.slug}}" class="d-flex align-items-center">Read More <i class="ms-2"><img src="assets/img/read_more.svg"></i></a>
+                    </div>
+                
+                </div>
+            </div>
+
+        
+        </div>
+    </div>
+</div>
+
+
+  
+<!--Popular Search Resorts section-->
+<app-popular-search></app-popular-search>
+
+<app-footer></app-footer>
+
+<!--Become a Member page-->
+<app-become-a-member></app-become-a-member>
